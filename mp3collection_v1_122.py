@@ -24,6 +24,12 @@ class MP3Collection(object):
     if title in self.d:
       del self.d[title]
 
+  def lookup(self, title):
+    if title in self.d:
+      return self.d[title]
+    else:
+      return None
+
 
 
   
